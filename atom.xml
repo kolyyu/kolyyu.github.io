@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-06T02:51:21.663Z</updated>
+  <updated>2019-12-06T02:54:16.581Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://yoursite.com/2019/12/06/Linux%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/"/>
     <id>http://yoursite.com/2019/12/06/Linux%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/</id>
     <published>2019-12-06T02:27:19.000Z</published>
-    <updated>2019-12-06T02:51:21.663Z</updated>
+    <updated>2019-12-06T02:54:16.581Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Linux系统常用监控工具"><a href="#Linux系统常用监控工具" class="headerlink" title="Linux系统常用监控工具"></a>Linux系统常用监控工具</h1><h2 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h2><p>top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。</p><a id="more"></a><p>top命令视图如下：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE.png" alt="top命令视图"></p><p>每个指标的含义：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE%E4%B8%AD%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3.png" alt="top命令视图中各项指标详解"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h2><p>top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。</p><a id="more"></a><p>top命令视图如下：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE.png" alt="top命令视图"></p><p>每个指标的含义：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE%E4%B8%AD%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3.png" alt="top命令视图中各项指标详解"></p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Linux系统常用监控工具&quot;&gt;&lt;a href=&quot;#Linux系统常用监控工具&quot; class=&quot;headerlink&quot; title=&quot;Linux系统常用监控工具&quot;&gt;&lt;/a&gt;Linux系统常用监控工具&lt;/h1&gt;&lt;h2 id=&quot;top命令&quot;&gt;&lt;a href=&quot;#top命令&quot; class=&quot;headerlink&quot; title=&quot;top命令&quot;&gt;&lt;/a&gt;top命令&lt;/h2&gt;&lt;p&gt;top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。&lt;/p&gt;
+      &lt;h2 id=&quot;top命令&quot;&gt;&lt;a href=&quot;#top命令&quot; class=&quot;headerlink&quot; title=&quot;top命令&quot;&gt;&lt;/a&gt;top命令&lt;/h2&gt;&lt;p&gt;top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。&lt;/p&gt;
     
     </summary>
     
