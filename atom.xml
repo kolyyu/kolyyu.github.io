@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-06T08:31:47.686Z</updated>
+  <updated>2019-12-06T08:35:19.051Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/12/06/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C-%E4%B8%BB%E9%A2%98yilia/"/>
     <id>http://yoursite.com/2019/12/06/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C-%E4%B8%BB%E9%A2%98yilia/</id>
     <published>2019-12-06T08:19:50.000Z</published>
-    <updated>2019-12-06T08:31:47.686Z</updated>
+    <updated>2019-12-06T08:35:19.051Z</updated>
     
-    <content type="html"><![CDATA[<p>参考：<a href="https://www.cnblogs.com/xljzlw/p/5137622.html" target="_blank" rel="noopener">https://www.cnblogs.com/xljzlw/p/5137622.html</a></p><a id="more"></a><h4 id="文中的几处错误"><a href="#文中的几处错误" class="headerlink" title="文中的几处错误"></a>文中的几处错误</h4><ul><li><p>生成json的tool.js有问题，修改后如下：</p></li><li><p><img src="/Users/yuxueyuan/hexo-blog/source/img/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C--%E4%B8%BB%E9%A2%98yilia/image-20191206162408466.png" alt="image-20191206162408466"></p></li><li><p>文中提到的主题下的source/js下面的多处，其实都是source-src/js</p><p>比如：<img src="/Users/yuxueyuan/hexo-blog/source/img/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C--%E4%B8%BB%E9%A2%98yilia/image-20191206162537331.png" alt="image-20191206162537331"></p><p>​            <img src="/Users/yuxueyuan/hexo-blog/source/img/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C--%E4%B8%BB%E9%A2%98yilia/image-20191206162602648.png" alt="image-20191206162602648"></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>参考：<a href="https://www.cnblogs.com/xljzlw/p/5137622.html" target="_blank" rel="noopener">https://www.cnblogs.com/xljzlw/p/5137622.html</a></p><a id="more"></a><h4 id="文中的几处错误"><a href="#文中的几处错误" class="headerlink" title="文中的几处错误"></a>文中的几处错误</h4><ul><li><p>生成json的tool.js有问题，修改后如下：</p></li><li><p><img src="/img/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C--%E4%B8%BB%E9%A2%98yilia/image-20191206162408466.png" alt="image-20191206162408466"></p></li><li><p>文中提到的主题下的source/js下面的多处，其实都是source-src/js</p><p>比如：<img src="/img/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C--%E4%B8%BB%E9%A2%98yilia/image-20191206162537331.png" alt="image-20191206162537331"></p><p>​            <img src="img/hexo%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C--%E4%B8%BB%E9%A2%98yilia/image-20191206162602648.png" alt="image-20191206162602648"></p></li></ul>]]></content>
     
     <summary type="html">
     
