@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-06T02:47:19.594Z</updated>
+  <updated>2019-12-06T02:51:21.663Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,36 +21,13 @@
     <link href="http://yoursite.com/2019/12/06/Linux%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/"/>
     <id>http://yoursite.com/2019/12/06/Linux%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/</id>
     <published>2019-12-06T02:27:19.000Z</published>
-    <updated>2019-12-06T02:47:19.594Z</updated>
+    <updated>2019-12-06T02:51:21.663Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Linux系统常用监控工具"><a href="#Linux系统常用监控工具" class="headerlink" title="Linux系统常用监控工具"></a>Linux系统常用监控工具</h1><h2 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h2><p>top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。</p><p>top命令视图如下：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE.png" alt="top命令视图"></p><p>每个指标的含义：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE%E4%B8%AD%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3.png" alt="top命令视图中各项指标详解"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Linux系统常用监控工具&quot;&gt;&lt;a href=&quot;#Linux系统常用监控工具&quot; class=&quot;headerlink&quot; title=&quot;Linux系统常用监控工具&quot;&gt;&lt;/a&gt;Linux系统常用监控工具&lt;/h1&gt;&lt;h2 id=&quot;top命令&quot;&gt;&lt;a href=&quot;#top命
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>one</title>
-    <link href="http://yoursite.com/2019/12/04/one/"/>
-    <id>http://yoursite.com/2019/12/04/one/</id>
-    <published>2019-12-04T07:02:47.098Z</published>
-    <updated>2019-12-05T04:02:00.377Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>段落1  </p><p>段落2  </p><a id="more"></a><p>段落3</p><p>段落4</p><p><strong>加粗</strong><br><em>斜体</em></p><p><strong>加粗</strong></p><p><strong><em>粗斜体</em></strong></p><p><strong><em>粗斜体</em></strong></p><hr><hr><hr><hr><p><del>删除线</del><br><u>下划线</u></p><ul><li>第一项</li><li>2</li></ul><ol><li>第一项</li><li>第二项<ul><li>1</li><li>2</li></ul></li></ol><blockquote><p>1</p><blockquote><p>2</p><blockquote><p>3</p><ul><li>1</li><li>2</li><li>3</li></ul></blockquote></blockquote></blockquote><ol><li><p>d</p></li><li><p>f</p></li><li><p>g</p><blockquote><p>4</p><p>5</p><p>6</p></blockquote></li></ol><p><code>print()</code></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    alert(<span class="string">'RUNOOB'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure><p>[链接a]<a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a></p><p><img src="/img/s8ig.jpeg" alt="alt fff" title="dddd"></p><table><thead><tr><th align="center">A</th><th>B</th><th>C</th></tr></thead><tbody><tr><td align="center">1</td><td>2</td><td>3</td></tr><tr><td align="center">4</td><td>5</td><td>6</td></tr></tbody></table><p><kbd>Crtl</kbd></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Linux系统常用监控工具"><a href="#Linux系统常用监控工具" class="headerlink" title="Linux系统常用监控工具"></a>Linux系统常用监控工具</h1><h2 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h2><p>top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。</p><a id="more"></a><p>top命令视图如下：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE.png" alt="top命令视图"></p><p>每个指标的含义：</p><p><img src="/img/top%E5%91%BD%E4%BB%A4%E8%A7%86%E5%9B%BE%E4%B8%AD%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3.png" alt="top命令视图中各项指标详解"></p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a&gt;二级标题&lt;/h2&gt;&lt;h3 id=&quot;三级标题&quot;&gt;&lt;a href=&quot;#三级标题&quot; class=&quot;headerlink&quot; title=&quot;三级标题&quot;&gt;&lt;/a&gt;三级标题&lt;/h3&gt;&lt;p&gt;段落1  &lt;/p&gt;
-&lt;p&gt;段落2  &lt;/p&gt;
+      &lt;h1 id=&quot;Linux系统常用监控工具&quot;&gt;&lt;a href=&quot;#Linux系统常用监控工具&quot; class=&quot;headerlink&quot; title=&quot;Linux系统常用监控工具&quot;&gt;&lt;/a&gt;Linux系统常用监控工具&lt;/h1&gt;&lt;h2 id=&quot;top命令&quot;&gt;&lt;a href=&quot;#top命令&quot; class=&quot;headerlink&quot; title=&quot;top命令&quot;&gt;&lt;/a&gt;top命令&lt;/h2&gt;&lt;p&gt;top命令类似windows下的任务管理器，能够实时的监控并显示系统中各个进程的资源占用状况，是Linux下常用的性能监控和分析工具。&lt;/p&gt;
     
     </summary>
     
