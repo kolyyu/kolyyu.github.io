@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-09T08:58:45.098Z</updated>
+  <updated>2019-12-09T09:04:34.809Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,22 @@
     <link href="http://yoursite.com/2019/12/09/elasticsearch%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2019/12/09/elasticsearch%E5%AE%89%E8%A3%85/</id>
     <published>2019-12-09T08:19:44.000Z</published>
-    <updated>2019-12-09T08:58:45.098Z</updated>
+    <updated>2019-12-09T09:04:34.809Z</updated>
     
-    <content type="html"><![CDATA[<ol><li><p>wget <a href="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz" target="_blank" rel="noopener">https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz</a></p></li><li><p>tar -zxvf elasticsearch-5.3.0.tar.gz</p></li><li><p>cd elasticsearch-5.3.0/bin</p></li><li><p>./elasticsearch</p></li></ol><h5 id="启动报错了"><a href="#启动报错了" class="headerlink" title="启动报错了"></a>启动报错了</h5><hr><p>错误1</p><hr><p><img src="/img/elasticsearch/image-20191209162256025.png" alt="image-20191209162256025"></p><p>solutions:</p><p>在linux环境中，elasticstatic不允许以root权限运行，所以需要创建一个非root用户，用非root用户启动es</p><p>步骤：</p><ul><li><p>groupadd elk</p></li><li><p>useradd elk -g elk -p 111111</p></li><li><p>chown -R elk:elk /opt/es</p></li><li><p>su elk</p></li><li><p>启动</p></li></ul><hr><p>错误2</p><hr><p><img src="/img/elasticsearch/image-20191209163923583.png" alt="image-20191209163923583"></p><p>solutions：</p><p>es启动依赖JRE,环境上安装一下jdk就可以了</p><p>步骤：</p><ul><li>yum list java*  获取可安装列表</li><li>yum install java-1.8.0-openjdk-devel.x86_64 </li><li>安装完之后java -version看下</li><li>然后启动，ok</li></ul><p><img src="/img/elasticsearch/image-20191209165044291.png" alt="image-20191209165044291"></p><h5 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h5><p><img src="/img/elasticsearch/image-20191209165820165.png" alt="image-20191209165820165"></p><p>ok，成功访问</p>]]></content>
+    <content type="html"><![CDATA[<ol><li><p>wget <a href="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz" target="_blank" rel="noopener">https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz</a></p></li><li><p>tar -zxvf elasticsearch-5.3.0.tar.gz</p></li><li><p>cd elasticsearch-5.3.0/bin</p></li><li><p>./elasticsearch</p></li></ol><a id="more"></a><h5 id="启动报错了"><a href="#启动报错了" class="headerlink" title="启动报错了"></a>启动报错了</h5><hr><p>错误1</p><hr><p><img src="/img/elasticsearch/image-20191209162256025.png" alt="image-20191209162256025"></p><p>solutions:</p><p>在linux环境中，elasticstatic不允许以root权限运行，所以需要创建一个非root用户，用非root用户启动es</p><p>步骤：</p><ul><li><p>groupadd elk</p></li><li><p>useradd elk -g elk -p 111111</p></li><li><p>chown -R elk:elk /opt/es</p></li><li><p>su elk</p></li><li><p>启动</p></li></ul><hr><p>错误2</p><hr><p><img src="/img/elasticsearch/image-20191209163923583.png" alt="image-20191209163923583"></p><p>solutions：</p><p>es启动依赖JRE,环境上安装一下jdk就可以了</p><p>步骤：</p><ul><li>yum list java*  获取可安装列表</li><li>yum install java-1.8.0-openjdk-devel.x86_64 </li><li>安装完之后java -version看下</li><li>然后启动，ok</li></ul><p><img src="/img/elasticsearch/image-20191209165044291.png" alt="image-20191209165044291"></p><h5 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h5><p><img src="/img/elasticsearch/image-20191209165820165.png" alt="image-20191209165820165"></p><p>ok，成功访问</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;wget &lt;a href=&quot;https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ht
-      
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;wget &lt;a href=&quot;https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;tar -zxvf elasticsearch-5.3.0.tar.gz&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;cd elasticsearch-5.3.0/bin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;./elasticsearch&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     

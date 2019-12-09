@@ -189,42 +189,7 @@
 <li><p>./elasticsearch</p>
 </li>
 </ol>
-<h5 id="启动报错了"><a href="#启动报错了" class="headerlink" title="启动报错了"></a>启动报错了</h5><hr>
-<p>错误1</p>
-<hr>
-<p><img src="/img/elasticsearch/image-20191209162256025.png" alt="image-20191209162256025"></p>
-<p>solutions:</p>
-<p>在linux环境中，elasticstatic不允许以root权限运行，所以需要创建一个非root用户，用非root用户启动es</p>
-<p>步骤：</p>
-<ul>
-<li><p>groupadd elk</p>
-</li>
-<li><p>useradd elk -g elk -p 111111</p>
-</li>
-<li><p>chown -R elk:elk /opt/es</p>
-</li>
-<li><p>su elk</p>
-</li>
-<li><p>启动</p>
-</li>
-</ul>
-<hr>
-<p>错误2</p>
-<hr>
-<p><img src="/img/elasticsearch/image-20191209163923583.png" alt="image-20191209163923583"></p>
-<p>solutions：</p>
-<p>es启动依赖JRE,环境上安装一下jdk就可以了</p>
-<p>步骤：</p>
-<ul>
-<li>yum list java*  获取可安装列表</li>
-<li>yum install java-1.8.0-openjdk-devel.x86_64 </li>
-<li>安装完之后java -version看下</li>
-<li>然后启动，ok</li>
-</ul>
-<p><img src="/img/elasticsearch/image-20191209165044291.png" alt="image-20191209165044291"></p>
-<h5 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h5><p><img src="/img/elasticsearch/image-20191209165820165.png" alt="image-20191209165820165"></p>
-<p>ok，成功访问</p>
-
+        
       
 
       
