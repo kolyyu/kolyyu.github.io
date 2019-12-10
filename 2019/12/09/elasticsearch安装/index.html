@@ -19,7 +19,10 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209163923583.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209165044291.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209165820165.png">
-<meta property="og:updated_time" content="2019-12-09T09:05:25.321Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209172442177.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191210103540912.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191210103611637.png">
+<meta property="og:updated_time" content="2019-12-10T02:54:05.787Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209162256025.png">
   
@@ -72,7 +75,7 @@
     		总文章数 3
 		</nav>
 		<nav>
-    		总字数 <span class="post-count">276</span>
+    		总字数 <span class="post-count">615</span>
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -185,7 +188,7 @@
         
       </header>
       <div align="center" class="post-count">
-        字数：154字 | 预计阅读时长：1分钟
+        字数：493字 | 预计阅读时长：2分钟
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -237,6 +240,34 @@
 <p><img src="/img/elasticsearch/image-20191209165044291.png" alt="image-20191209165044291"></p>
 <h5 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h5><p><img src="/img/elasticsearch/image-20191209165820165.png" alt="image-20191209165820165"></p>
 <p>ok，成功访问</p>
+<h5 id="为了方便访问，将network地址设置为0-0-0-0，然后启动"><a href="#为了方便访问，将network地址设置为0-0-0-0，然后启动" class="headerlink" title="为了方便访问，将network地址设置为0.0.0.0，然后启动"></a>为了方便访问，将network地址设置为0.0.0.0，然后启动</h5><p>修改文件为 config/elasticsearch.yml  设置network.host: 0.0.0.0</p>
+<hr>
+<p>报错3</p>
+<hr>
+<p><img src="/img/elasticsearch/image-20191209172442177.png" alt="image-20191209172442177"></p>
+<hr>
+<p>虚拟内存问题</p>
+<p>solutions：</p>
+<p>2种办法：</p>
+<p> 1）临时修改sysctl -w vm.max_map_count=262144,重启失效</p>
+<p>2）永久修改echo “vm.max_map_count=262144” &gt;&gt; /etc/sysctl.conf ; sysctl -p</p>
+<hr>
+<p>文件句柄问题</p>
+<p>solutions：</p>
+<p>echo “* hard nofile 65536” &gt;&gt; /etc/security/limits.conf </p>
+<p>echo “* soft nofile 65536” &gt;&gt; /etc/security/limits.conf </p>
+<p>修改完需要重启才能生效，但是不想重启，在root下临时设置ulimit -n 65536，不过在su elk下仍然不是65536，在elk下设置ulimit -n 65536没有权限。然后su - elk试了下，ok。</p>
+<hr>
+<p>最后，启动服务，发现地址不再是127.0.0.1了，浏览器访问ok。</p>
+<p><img src="/img/elasticsearch/image-20191210103540912.png" alt="image-20191210103540912"></p>
+<p><img src="/img/elasticsearch/image-20191210103611637.png" alt="image-20191210103611637"></p>
+<h5 id="su-user-和su-user的区别"><a href="#su-user-和su-user的区别" class="headerlink" title="su user 和su - user的区别"></a>su user 和su - user的区别</h5><ul>
+<li>su不指定用户名，默认切root，不会改变当前工作目录以及HOME,.SHELL,USER,LOGNAME,只是拥有了root的权限</li>
+<li>root切普通用户不需要密码，普通用户切root需要密码</li>
+<li>su - username 切换后，同时切换到新用户的工作环境中(全切)</li>
+<li>su username切换后，不改变原用户的工作目录，及其他环境变量目录，只是拥有了用户的权限而已(半切)</li>
+</ul>
+<p>example： 从root用户切su elk之后，工作目录还是root，及环境变量什么的都是root的</p>
 
       
 
@@ -369,7 +400,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#启动报错了"><span class="toc-number">1.</span> <span class="toc-text">启动报错了</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#测试下"><span class="toc-number">2.</span> <span class="toc-text">测试下</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#启动报错了"><span class="toc-number">1.</span> <span class="toc-text">启动报错了</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#测试下"><span class="toc-number">2.</span> <span class="toc-text">测试下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#为了方便访问，将network地址设置为0-0-0-0，然后启动"><span class="toc-number">3.</span> <span class="toc-text">为了方便访问，将network地址设置为0.0.0.0，然后启动</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#su-user-和su-user的区别"><span class="toc-number">4.</span> <span class="toc-text">su user 和su - user的区别</span></a></li></ol>
                     </div>
                 </span>
             </div>
