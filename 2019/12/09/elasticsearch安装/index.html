@@ -22,7 +22,11 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209172442177.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191210103540912.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191210103611637.png">
-<meta property="og:updated_time" content="2019-12-10T02:54:05.787Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191230160437016.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191230160659274.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191230162518785.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191230162854476.png">
+<meta property="og:updated_time" content="2019-12-30T08:30:22.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;elasticsearch&#x2F;image-20191209162256025.png">
   
@@ -75,7 +79,7 @@
     		总文章数 3
 		</nav>
 		<nav>
-    		总字数 <span class="post-count">615</span>
+    		总字数 <span class="post-count">737</span>
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -188,7 +192,7 @@
         
       </header>
       <div align="center" class="post-count">
-        字数：493字 | 预计阅读时长：2分钟
+        字数：615字 | 预计阅读时长：2分钟
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -268,6 +272,25 @@
 <li>su username切换后，不改变原用户的工作目录，及其他环境变量目录，只是拥有了用户的权限而已(半切)</li>
 </ul>
 <p>example： 从root用户切su elk之后，工作目录还是root，及环境变量什么的都是root的</p>
+<h3 id="接下来安装es的可视化插件elasticsearch-head"><a href="#接下来安装es的可视化插件elasticsearch-head" class="headerlink" title="接下来安装es的可视化插件elasticsearch-head"></a>接下来安装es的可视化插件elasticsearch-head</h3><ul>
+<li>Git clone git://github.com/mobz/elasticsearch-head.git</li>
+<li>cd elasticsearch-head</li>
+<li>npm install -g  # 使用cnpm install和npm install都失败，最后加了-g成功</li>
+<li>npm run start</li>
+</ul>
+<p>启动成功：</p>
+<p><img src="/img/elasticsearch/image-20191230160437016.png" alt="image-20191230160437016"></p>
+<p><img src="/img/elasticsearch/image-20191230160659274.png" alt="image-20191230160659274"></p>
+<hr>
+<p>error：发现集群一直是未连接</p>
+<hr>
+<p><img src="/img/elasticsearch/image-20191230162518785.png" alt="image-20191230162518785"></p>
+<p>solutions：9100连9200存在跨域问题，需要配置跨域信息。</p>
+<p>echo “http.cors.enabled: true” &gt;&gt; elasticsearch.yml</p>
+<p>echo “http.cors.allow-origin: \“*\“” &gt;&gt; elasticsearch.yml</p>
+<p>然后重启es，成功。</p>
+<p><img src="/img/elasticsearch/image-20191230162854476.png" alt="image-20191230162854476"></p>
+<p> curl -X PUT “localhost:9200/weather” 测试通关，能在页面显示如图。</p>
 
       
 
@@ -400,7 +423,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#启动报错了"><span class="toc-number">1.</span> <span class="toc-text">启动报错了</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#测试下"><span class="toc-number">2.</span> <span class="toc-text">测试下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#为了方便访问，将network地址设置为0-0-0-0，然后启动"><span class="toc-number">3.</span> <span class="toc-text">为了方便访问，将network地址设置为0.0.0.0，然后启动</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#su-user-和su-user的区别"><span class="toc-number">4.</span> <span class="toc-text">su user 和su - user的区别</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#启动报错了"><span class="toc-number">1.</span> <span class="toc-text">启动报错了</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#测试下"><span class="toc-number">2.</span> <span class="toc-text">测试下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#为了方便访问，将network地址设置为0-0-0-0，然后启动"><span class="toc-number">3.</span> <span class="toc-text">为了方便访问，将network地址设置为0.0.0.0，然后启动</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#su-user-和su-user的区别"><span class="toc-number">4.</span> <span class="toc-text">su user 和su - user的区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接下来安装es的可视化插件elasticsearch-head"><span class="toc-number"></span> <span class="toc-text">接下来安装es的可视化插件elasticsearch-head</span></a>
                     </div>
                 </span>
             </div>
